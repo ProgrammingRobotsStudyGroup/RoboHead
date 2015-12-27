@@ -47,5 +47,5 @@ PYTHONPATH=. python mod_pywebsocket/standalone.py -d example -p 8765
 From the browser, try any of the following:
 
 * http://localhost:8765/console.html
-* http://RoboSocket.html[Simple Test Code]
-* http://simple_websocket_client.html[More Complex Example]
+* link:RoboSocket.html[Simple Test Code]
+* link:simple_websocket_client.html[More Complex Example]
