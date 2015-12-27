@@ -1,0 +1,51 @@
+= RoboHead Manual
+:toc:
+
+== License
+
+The materials for this class are licensed under the Apache license. See the file LICENSE for details.
+
+Copyright 2015 F Douthit
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+== Install  pywebsocket
+
+* Clone the repository
+[source,shell]
+----
+git clone https://github.com/google/pywebsocket.git
+----
+* Build and install the code
+[source,shell]
+----
+cd pywebsocket/
+python setup.py build
+python setup.py install --user
+----
+* Configure
+[source,shell]
+----
+pydoc mod_pywebsocket.standalone
+----
+* Run the server
+[source,shell]
+----
+PYTHONPATH=. python mod_pywebsocket/standalone.py -d example -p 8765
+----
+
+== Browser testing
+From the browser, try any of the following:
+
+* http://localhost:8765/console.html
+* http://RoboSocket.html[Simple Test Code]
+* http://simple_websocket_client.html[More Complex Example]
